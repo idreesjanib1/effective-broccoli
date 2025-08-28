@@ -3,6 +3,10 @@ name: Build Docker image
 on:
   workflow_dispatch:
 
+env:
+   IMAGE_REGISTRY_URL: ghcr.io
+   DOCKER_IMAGE_NAME: idreesjanib1-azure-dockerimage
+
 jobs:
   build:
     runs-on: ubuntu-latest
